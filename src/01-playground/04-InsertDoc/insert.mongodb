@@ -1,0 +1,44 @@
+use("Dump")
+
+db.products.insertOne({
+    _id:1,
+	name:"Product 1",
+	price: 1000
+})
+
+db.products.insertOne({
+    _id:2,
+	name:"Product 2",
+	price: 100
+})
+db.products.insertOne({
+    _id:3,
+	name:"Product 3",
+	price: 1000
+})
+
+db.products.insertOne({
+    _id:4,
+	name:"Product 4",
+	price: 100
+})
+
+db.products.insertOne({
+    _id:5,
+	name:"Product 5",
+	price: 100
+})
+
+db.products.insertOne({
+    _id:6,
+	name:"Product 6",
+	price: 1000
+})
+
+db.products.insertOne({
+    _id:7,
+	name:"Product 7",
+	price: 100
+})
+
+//El output que sale es de la ultima instruccion

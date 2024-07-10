@@ -1,0 +1,48 @@
+use("Dump")
+
+//borras todos los documentos de toda la coleccion
+db.products.drop()
+
+db.products.insertMany([
+    {
+        _id:1,
+        name:"Product 1",
+        price: 103
+    },
+    {
+        _id:2,
+        name:"Product 2",
+        price: 10
+    },
+    {
+        _id:3,
+        name:"Product 3",
+        price: 103
+    },
+    {
+        _id:4,
+        name:"Product 4",
+        price: 150
+    },
+    {
+        _id:5,
+        name:"Product 5",
+        price: 1543
+    },
+    {
+        _id:6,
+        name:"Product 6",
+        price: 102
+    },
+    {
+        _id:7,
+        name:"Product 7",
+        price: 1002
+    }
+], {
+    //no importa si hay errores, los salte y continue insertando
+    ordered: false
+})
+
+
+db.products.find()

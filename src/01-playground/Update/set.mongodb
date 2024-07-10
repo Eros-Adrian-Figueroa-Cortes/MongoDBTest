@@ -1,0 +1,41 @@
+use("sample_training")
+
+
+//$Set is used to add a new field to the document
+//db.zips.updateMany(
+//    {
+//        city:"CLEVELAND"
+//    },
+//    {
+//        $set:{
+//            OwnAttribute:"OwnValue"
+//        }
+//    }
+//    )
+
+//Rename, rename the field name
+// db.zips.updateMany(
+//    {
+//        city:"CLEVELAND"
+//    },
+//    {
+//        $rename:{
+//            OwnAttribute:"my_data"
+//        }
+//    }
+//    )
+
+//$unset, remove the field from the document
+ db.zips.updateMany(
+    {
+        city:"CLEVELAND"
+    },
+    {
+        $unset:{
+            my_data:""
+        }
+    }
+    )
+
+
+    db.zips.find({ city:"CLEVELAND"})

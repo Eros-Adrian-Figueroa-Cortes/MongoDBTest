@@ -1,0 +1,16 @@
+use("Dump")
+
+db.products.updateOne(
+    //query usando un id en formato de objeto generado por MongoDb
+    {
+        _id:ObjectId("668e8d95f10dd8a53c77205a"),
+    },
+    //update change => operator for increment values
+    {
+        $inc: {
+            price: 1500,
+        }
+    }
+)
+
+db.products.find()

@@ -1,0 +1,3 @@
+use ("Dump")
+
+db.products.find()

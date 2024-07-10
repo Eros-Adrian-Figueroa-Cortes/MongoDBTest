@@ -1,0 +1,17 @@
+use("Dump")
+
+db.products.updateOne(
+    //query
+    {
+        _id: 1
+    },
+    //update change => operator
+    {
+        $set: {
+            name: "Product 1",
+            price: 1500,
+            tags: ["Test","Testing","Tested"]
+        }
+    }
+)
+db.products.find()

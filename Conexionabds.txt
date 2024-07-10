@@ -1,0 +1,36 @@
+Conectar a la base de datos ->
+use("sample_training")
+
+Consulta
+db.zips.find({ state: "NY" })  
+
+Consulta para ver cuantos se encuentran cuantas rutas son en NY
+use("sample_training")
+db.zips.find({ state: "NY" }).count()
+
+Ejemplo Final
+use("sample_training")
+db.zips.find({ state: "NY" })   
+Estructura
+db.coleccion.find ({})
+
+Crear base de datos
+use("store")
+
+db.products.insertOne({
+	name:"Product 1",
+	price: 1000
+})
+
+db.products.insertOne({
+	name:"Product 2",
+	price: 100
+})
+
+mongod
+
+
+
+
+
+

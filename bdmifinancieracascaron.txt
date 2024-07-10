@@ -1,0 +1,81 @@
+Tablas:
+ calendario_pago            
+ campana_fidelidad_cliente  
+ cliente                    
+ dw_historico_saldo         
+ empleado                   
+ ip_blocklist               
+ movimiento_tarjeta_credito 
+ pago_credito               
+ prestamo                   
+ seguimiento_cobro          
+ sucursal                   
+ tarjeta_credito            
+
+ id_campana | id_cliente |             nombre              |                                       descripcion                                        | fecha_inicio | fecha_fin  |         objetivo          |   recompensa    |                        comentario
+------------+------------+---------------------------------+------------------------------------------------------------------------------------------+--------------+------------+---------------------------+-----------------+-----------------------------------------------------------
+          1 |          1 | Beneficios Savings Account 2024 | Recibe un regalo especial por compras superiores a $500 en nuestros comercios afiliados. | 2024-03-20   | 2024-06-01 | Incrementar uso en regalo | Regalo sorpresa | Deleniti ut temporibus. Aliquam repudiandae numquam sunt.
+(1 fila)
+
+
+ id_cliente | nombre | apellido_paterno | apellido_materno |           direccion           | telefono  |          email          |                           comentario
+------------+--------+------------------+------------------+-------------------------------+-----------+-------------------------+----------------------------------------------------------------
+          1 | Tadeo  | Ða±ez            | Toledo           | 23830 Lizbeth Sector, Tijuana | 513244457 | tadeo.aez@raquel.gob.mx | IncrÚdulamente Abajo Incorrectamente Batallona Descentralizar.
+(1 fila)
+
+
+ id_historico | fecha_cierre | id_cliente | id_empleado | id_prestamo | fecha_inicio | fecha_ultimo_pago | saldo_monto_credito | saldo_monto_intereses | saldo_monto_comisiones | listado_pagos_monto_credito | listado_pagos_monto_intereses | listado_pagos_monto_comisiones | fecha_hora_generacion
+--------------+--------------+------------+-------------+-------------+--------------+-------------------+---------------------+-----------------------+------------------------+-----------------------------+-------------------------------+--------------------------------+-----------------------
+(0 filas)
+
+
+ id_empleado | nombre | apellido_paterno | apellido_materno | id_sucursal |      puesto       |                                                 comentario
+-------------+--------+------------------+------------------+-------------+-------------------+-------------------------------------------------------------------------------------------------------------
+           1 | Isaias | Quintana         | Yanes            |           2 | Asesor de CrÚdito | Geneßtico Incorruptibilidad Abadiado Generalato Engarfiar Gemoterapia Abada Basurear Incredibilidad Abajar.
+(1 fila)
+
+
+   blocked_ip
+-----------------
+ 192.168.198.241
+(1 fila)
+
+
+ id_movimiento | id_tarjeta | fecha_movimiento | tipo_movimiento |  monto  |                                                       descripcion
+---------------+------------+------------------+-----------------+---------+-------------------------------------------------------------------------------------------------------------------------
+             1 |          1 | 2021-01-12       | cargo           | 2200.00 | deposit transaction at Barton, Hermann and Bradtke using card ending with ***6341 for PGK 990.89 in account ***28225839
+(1 fila)
+
+
+ id_pago | id_prestamo | monto_credito | monto_intereses | monto_comisiones | fecha_pago |   comentario
+---------+-------------+---------------+-----------------+------------------+------------+----------------
+       1 |           2 |        541.67 |           44.20 |            11.05 | 2024-05-30 | Pago en atraso
+(1 fila)
+
+
+ id_prestamo | id_cliente | id_empleado | monto_credito | monto_intereses | monto_comisiones | interes_anual | fecha_inicio | plazo |            comentario             | estatus_credito
+-------------+------------+-------------+---------------+-----------------+------------------+---------------+--------------+-------+-----------------------------------+-----------------
+           1 |          1 |         285 |       7000.00 |          560.00 |           140.00 |          8.00 | 2023-11-27   |    12 | PrÚstamo generado automßticamente | Cancelado
+(1 fila)
+
+
+ id_seguimiento | id_prestamo | fecha_seguimiento | detalle | comentario
+----------------+-------------+-------------------+---------+------------
+(0 filas)
+
+
+ id_sucursal | nombre_sucursal |         direccion         | telefono  |          comentario
+-------------+-----------------+---------------------------+-----------+-------------------------------
+           1 | Sucursal 1      | 68631 Juan Huerta, Merida | 531355296 | Batazo Incorruptible Cencero.
+(1 fila)
+
+
+ id_tarjeta | id_cliente | limite_credito | saldo_actual | fecha_emision | fecha_vencimiento | estatus |                            comentario                             |     num_tarjeta
+------------+------------+----------------+--------------+---------------+-------------------+---------+-------------------------------------------------------------------+---------------------
+          1 |          1 |       27000.00 |     21000.00 | 2022-08-02    | 2025-01-14        | Activa  | Eaque eveniet modi laboriosam non dolore possimus aut voluptates. | 6331-****-****-8283
+(1 fila)
+
+
+
+
+

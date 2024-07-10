@@ -1,0 +1,17 @@
+use("Dump")
+
+db.products.updateOne(
+    //query
+    {
+        _id: 2
+    },
+    //update change => operator
+    //inc, incrementar un valor
+    {
+        $inc: {
+            price: 1500,
+        }
+    }
+)
+
+db.products.find()
